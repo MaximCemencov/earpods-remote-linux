@@ -1,5 +1,10 @@
 # earpods-remote-linux
 
+> **Status: unfinished.** This is my own interpretation of the problem and an experimental, incomplete solution.
+> On my machine the centre button and Vol+ worked reliably, Vol- did not (missed presses, occasional phantom steps,
+> holds that did not start or did not stop). It is not maintained and I no longer use it. Use at your own risk -
+> the findings in [docs/findings.md](docs/findings.md) may still be useful to someone.
+
 Make the **remote buttons of Apple EarPods (3.5 mm)** work on a Linux laptop: play/pause, next/previous track,
 volume up/down with click *and* hold. Built and tested on a **ThinkPad X1 Extreme Gen 2** (Conexant **CX11880**
 codec), plus a bridge for the **Apple USB-C to 3.5 mm adapter** (`05ac:110a`).
