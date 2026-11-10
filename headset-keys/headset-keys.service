@@ -1,0 +1,15 @@
+[Unit]
+Description=Headset remote buttons (Conexant CX11880 hook button + Apple USB-C adapter bridge -> media keys)
+After=sound.target systemd-udevd.service
+
+[Service]
+ExecStart=/usr/local/libexec/headset-keys.py
+Restart=always
+RestartSec=3
+NoNewPrivileges=yes
+ProtectHome=yes
+ProtectSystem=strict
+PrivateTmp=yes
+
+[Install]
+WantedBy=multi-user.target

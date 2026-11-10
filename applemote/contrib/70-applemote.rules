@@ -1,0 +1,5 @@
+# applemote: let the logged-in seat user write key events into the sound card's
+# jack input devices (they already advertise the headset volume keys), so no
+# root process or uinput access is needed.  Writing to such a device can only
+# produce the keys/switches that device already has.
+SUBSYSTEM=="input", KERNEL=="event*", ATTRS{phys}=="ALSA", TAG+="uaccess"

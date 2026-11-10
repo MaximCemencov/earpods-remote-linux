@@ -1,0 +1,12 @@
+[Unit]
+Description=Apple 3.5 mm headset remote volume buttons (applemote)
+After=pipewire.service pipewire-pulse.service wireplumber.service
+Wants=pipewire.service pipewire-pulse.service
+
+[Service]
+ExecStart=@BINDIR@/applemote run
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=default.target

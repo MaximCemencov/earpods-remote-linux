@@ -1,0 +1,3 @@
+# The virtual keyboard of headset-keys: the logged-in seat user may write key events into it (and only into it),
+# so the applemote user service can send Vol+/Vol- without access to /dev/uinput.
+SUBSYSTEM=="input", KERNEL=="event*", ATTRS{name}=="Headset remote keys", TAG+="uaccess"

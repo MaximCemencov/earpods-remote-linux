@@ -1,0 +1,6 @@
+[Unit]
+Description=Check the headset in the Apple USB-C to 3.5 mm adapter
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/libexec/apple-dongle-check.sh

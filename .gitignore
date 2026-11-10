@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.bak
+# recorded mic data never belongs in the repository
+*.wav
+collect/
+debug/

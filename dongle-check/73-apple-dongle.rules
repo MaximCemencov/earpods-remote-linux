@@ -1,0 +1,2 @@
+# Apple USB-C to 3.5 mm adapter: on every (re)enumeration check whether it recognised the headset mic.
+ACTION=="add", SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="05ac", ATTR{idProduct}=="110a", TAG+="systemd", ENV{SYSTEMD_WANTS}+="apple-dongle-check.service"

@@ -1,0 +1,4 @@
+# applemote (optional): for sound cards whose jack input device has no volume
+# keys, let the logged-in seat user create a uinput keyboard.  Note this lets
+# any program in your session create virtual input devices.
+KERNEL=="uinput", SUBSYSTEM=="misc", TAG+="uaccess", OPTIONS+="static_node=uinput"
